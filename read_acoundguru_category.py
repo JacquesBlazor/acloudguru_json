@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import os
 import json
 
-sourcedir = 'C:/Users/alvinlin/Downloads/'
+sourcedir = 'C:/Users/username/Downloads/'
 htmlfiles = os.listdir(sourcedir)
 htmlfiles = [eachfile for eachfile in htmlfiles if eachfile.startswith('Search Results - A Cloud')]
 all_entries = []
