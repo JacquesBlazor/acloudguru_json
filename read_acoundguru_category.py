@@ -26,8 +26,6 @@ for counter, each_htmlfile in enumerate(htmlfiles):
 			'details': ', '.join([eachfooter.get_text(strip=True) for eachfooter in footer])
 		})
 		print(counter, title)
-		#if title=='AWS Certified DevOps Engineer - Professional 2020':
-		#	break
 
 with open('all_acoundguru_course_entries.json', 'w', encoding='utf-8-sig') as f:
 	json.dump(all_entries, f, ensure_ascii=False, indent=4)
